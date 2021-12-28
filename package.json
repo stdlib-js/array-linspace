@@ -37,6 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
+    "@stdlib/array-base-linspace": "^0.0.x",
     "@stdlib/assert-is-nonnegative-integer": "^0.0.x",
     "@stdlib/assert-is-number": "^0.0.x",
     "@stdlib/math-base-assert-is-nan": "^0.0.x"
