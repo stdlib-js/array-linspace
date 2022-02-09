@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/array-linspace",
   "version": "0.0.6",
-  "description": "Generate a linearly spaced numeric array.",
+  "description": "Generate a linearly spaced array over a specified interval.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -37,10 +37,28 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/array-base-linspace": "^0.0.x",
+    "@stdlib/array-base-arraylike2object": "^0.0.x",
+    "@stdlib/array-dtype": "^0.0.x",
+    "@stdlib/array-typed-float-ctors": "^0.0.x",
+    "@stdlib/assert-has-own-property": "^0.0.x",
+    "@stdlib/assert-is-boolean": "^0.0.x",
+    "@stdlib/assert-is-collection": "^0.0.x",
+    "@stdlib/assert-is-complex-like": "^0.0.x",
     "@stdlib/assert-is-nonnegative-integer": "^0.0.x",
     "@stdlib/assert-is-number": "^0.0.x",
-    "@stdlib/math-base-assert-is-nan": "^0.0.x"
+    "@stdlib/assert-is-plain-object": "^0.0.x",
+    "@stdlib/assert-is-string": "^0.0.x",
+    "@stdlib/complex-dtype": "^0.0.x",
+    "@stdlib/complex-float32": "^0.0.x",
+    "@stdlib/complex-float64": "^0.0.x",
+    "@stdlib/complex-imag": "^0.0.x",
+    "@stdlib/complex-imagf": "^0.0.x",
+    "@stdlib/complex-real": "^0.0.x",
+    "@stdlib/complex-realf": "^0.0.x",
+    "@stdlib/math-base-assert-is-nan": "^0.0.x",
+    "@stdlib/strided-base-reinterpret-complex128": "^0.0.x",
+    "@stdlib/strided-base-reinterpret-complex64": "^0.0.x",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.0.x"
   },
   "devDependencies": {
     "@stdlib/assert-is-array": "^0.0.x",
