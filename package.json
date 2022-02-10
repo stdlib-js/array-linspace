@@ -58,6 +58,7 @@
     "@stdlib/math-base-assert-is-nan": "^0.0.x",
     "@stdlib/strided-base-reinterpret-complex128": "^0.0.x",
     "@stdlib/strided-base-reinterpret-complex64": "^0.0.x",
+    "@stdlib/types": "^0.0.x",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.0.x"
   },
   "devDependencies": {
