@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -22,8 +22,9 @@
 
 var bench = require( '@stdlib/bench' );
 var pow = require( '@stdlib/math-base-special-pow' );
-var randu = require( '@stdlib/random-base-randu' );
-var isArray = require( '@stdlib/assert-is-array' );
+var isArrayLikeObject = require( '@stdlib/assert-is-array-like-object' );
+var Complex128Array = require( '@stdlib/array-complex128' );
+var Complex128 = require( '@stdlib/complex-float64' );
 var pkg = require( './../package.json' ).name;
 var linspace = require( './../lib' );
 
@@ -38,6 +39,7 @@ var linspace = require( './../lib' );
 * @returns {Function} benchmark function
 */
 function createBenchmark( len ) {
+	var out = new Complex128Array( len );
 	return benchmark;
 
 	/**
@@ -47,21 +49,24 @@ function createBenchmark( len ) {
 	* @param {Benchmark} b - benchmark instance
 	*/
 	function benchmark( b ) {
+		var x1;
 		var x2;
 		var v;
 		var i;
 
+		x1 = new Complex128( 0.0, 0.0 );
+		x2 = new Complex128( 100.0, 10.0 );
+
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			x2 = randu() * 10.0;
-			v = linspace( 0.0, x2, len );
+			v = linspace.assign( x1, x2, out );
 			if ( typeof v !== 'object' ) {
-				b.fail( 'should return an array' );
+				b.fail( 'should return an array-like object' );
 			}
 		}
 		b.toc();
-		if ( !isArray( v ) ) {
-			b.fail( 'should return an array' );
+		if ( !isArrayLikeObject( v ) ) {
+			b.fail( 'should return an array-like object' );
 		}
 		b.pass( 'benchmark finished' );
 		b.end();
@@ -89,7 +94,7 @@ function main() {
 	for ( i = min; i <= max; i++ ) {
 		len = pow( 10, i );
 		f = createBenchmark( len );
-		bench( pkg+':len='+len, f );
+		bench( pkg+'::complex:assign:dtype=complex128,len='+len, f );
 	}
 }
 

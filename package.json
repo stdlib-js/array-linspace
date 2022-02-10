@@ -62,10 +62,14 @@
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.0.x"
   },
   "devDependencies": {
-    "@stdlib/assert-is-array": "^0.0.x",
+    "@stdlib/array-base-zeros": "^0.0.x",
+    "@stdlib/array-complex128": "^0.0.x",
+    "@stdlib/array-complex64": "^0.0.x",
+    "@stdlib/array-float32": "^0.0.x",
+    "@stdlib/array-float64": "^0.0.x",
+    "@stdlib/assert-is-array-like-object": "^0.0.x",
     "@stdlib/bench": "^0.0.x",
     "@stdlib/math-base-special-pow": "^0.0.x",
-    "@stdlib/random-base-randu": "^0.0.x",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-spec": "5.x.x"
