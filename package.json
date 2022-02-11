@@ -77,6 +77,8 @@
     "@stdlib/assert-is-float64array": "^0.0.x",
     "@stdlib/bench": "^0.0.x",
     "@stdlib/math-base-special-pow": "^0.0.x",
+    "@stdlib/utils-every-by": "^0.0.x",
+    "@stdlib/utils-nary-function": "^0.0.x",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-spec": "5.x.x"
