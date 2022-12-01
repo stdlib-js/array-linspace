@@ -24,30 +24,20 @@ limitations under the License.
 
 > Generate a linearly spaced array over a specified interval.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/array-linspace
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var linspace = require( '@stdlib/array-linspace' );
+import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-linspace@deno/mod.js';
+```
+
+You can also import the following named exports from the package:
+
+```javascript
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-linspace@deno/mod.js';
 ```
 
 #### linspace( start, stop, length\[, options] )
@@ -120,9 +110,9 @@ When either `start` or `stop` is a complex number, the default output array data
 <!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex-float64' );
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@deno/mod.js';
+import real from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-real@deno/mod.js';
+import imag from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imag@deno/mod.js';
 
 var opts = {
     'dtype': 'generic'
@@ -160,7 +150,7 @@ im = imag( z );
 Generates a linearly spaced sequence over a specified interval and assigns the results to a provided output array.
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
 
 var out = new Float64Array( 6 );
 var arr = linspace.assign( 0.0, 100.0, out );
@@ -197,7 +187,7 @@ arr = linspace.assign( 0.0, 100.0, [ -10.0 ], {
 For real-valued `start` and `stop`, if `start` is less than `stop`, the output array will contain ascending values, and, if `start` is greater than `stop`, the output array will contain descending values.
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
 
 var out = new Float64Array( 6 );
 var arr = linspace.assign( 0.0, -100.0, out );
@@ -211,7 +201,7 @@ The function accepts the following `options`:
 By default, the function generates a linearly spaced array over the closed interval `[start, stop]`. To generate linearly spaced values over the half-open interval `[start, stop)`, set the `endpoint` option to `false`.
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
 
 var opts = {
     'endpoint': false
@@ -248,7 +238,7 @@ var arr = linspace.assign( 0.0, 100.0, out, opts );
     where `arr[1]` is only guaranteed to be approximately equal to `0.5`. If you desire more control over element precision, consider using [`roundn`][@stdlib/math/base/special/roundn]:
 
     ```javascript
-    var roundn = require( '@stdlib/math-base-special-roundn' );
+    import roundn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-roundn@deno/mod.js';
 
     // Create an array subject to floating-point rounding errors:
     var arr = linspace( 0.0, 1.0, 3, {
@@ -283,7 +273,7 @@ var arr = linspace.assign( 0.0, 100.0, out, opts );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array-linspace' );
+import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-linspace@deno/mod.js';
 
 // Define function options:
 var opts = {
@@ -333,7 +323,7 @@ console.log( out );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -393,19 +383,19 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-linspace/main/LICENSE
 
-[@stdlib/math/base/special/roundn]: https://github.com/stdlib-js/math-base-special-roundn
+[@stdlib/math/base/special/roundn]: https://github.com/stdlib-js/math-base-special-roundn/tree/deno
 
-[@stdlib/array/typed-float-dtypes]: https://github.com/stdlib-js/array-typed-float-dtypes
+[@stdlib/array/typed-float-dtypes]: https://github.com/stdlib-js/array-typed-float-dtypes/tree/deno
 
-[@stdlib/array/typed-complex-dtypes]: https://github.com/stdlib-js/array-typed-complex-dtypes
+[@stdlib/array/typed-complex-dtypes]: https://github.com/stdlib-js/array-typed-complex-dtypes/tree/deno
 
-[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32
+[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32/tree/deno
 
-[@stdlib/array/incrspace]: https://github.com/stdlib-js/array-incrspace
+[@stdlib/array/incrspace]: https://github.com/stdlib-js/array-incrspace/tree/deno
 
 <!-- <related-links> -->
 
-[@stdlib/array/logspace]: https://github.com/stdlib-js/array-logspace
+[@stdlib/array/logspace]: https://github.com/stdlib-js/array-logspace/tree/deno
 
 <!-- </related-links> -->
 
