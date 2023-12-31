@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var pow = require( '@stdlib/math-base-special-pow' );
 var isArrayLikeObject = require( '@stdlib/assert-is-array-like-object' );
 var Float32Array = require( '@stdlib/array-float32' );
