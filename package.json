@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "@stdlib/array-base-arraylike2object": "^0.1.0",
+    "@stdlib/array-defaults": "^0.1.0",
     "@stdlib/array-dtype": "^0.1.0",
     "@stdlib/array-typed-float-ctors": "^0.1.0",
     "@stdlib/assert-has-own-property": "^0.1.1",
