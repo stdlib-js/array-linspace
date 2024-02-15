@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-linspace@esm/index.mjs';
+import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-linspace@v0.2.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-linspace@esm/index.mjs';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-linspace@v0.2.0-esm/index.mjs';
 ```
 
 #### linspace( start, stop, length\[, options] )
@@ -289,7 +289,7 @@ var arr = linspace.assign( 0.0, 100.0, out, opts );
 <body>
 <script type="module">
 
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-linspace@esm/index.mjs';
+import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-linspace@v0.2.0-esm/index.mjs';
 
 // Define function options:
 var opts = {
