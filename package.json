@@ -55,7 +55,7 @@
     "@stdlib/complex-float32-real": "github:stdlib-js/complex-float32-real#main",
     "@stdlib/complex-float64-ctor": "^0.0.1",
     "@stdlib/complex-float64-imag": "github:stdlib-js/complex-float64-imag#main",
-    "@stdlib/complex-real": "^0.2.1",
+    "@stdlib/complex-float64-real": "github:stdlib-js/complex-float64-real#main",
     "@stdlib/math-base-assert-is-nan": "^0.2.1",
     "@stdlib/strided-base-reinterpret-complex128": "^0.2.1",
     "@stdlib/strided-base-reinterpret-complex64": "^0.2.0",
