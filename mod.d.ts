@@ -18,7 +18,7 @@
 
 // TypeScript Version: 4.1
 
-/// <reference types="@stdlib/types"/>
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
 import { FloatingPointDataType as DataType, ArrayLike, FloatOrComplexTypedArray, Complex64Array, Complex128Array } from '@stdlib/types/array';
 import { ComplexLike, Complex64, Complex128 } from '@stdlib/types/complex';
