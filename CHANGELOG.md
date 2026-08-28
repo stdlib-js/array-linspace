@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-17)
+## Unreleased (2026-08-28)
+
+<section class="features">
+
+### Features
+
+-   [`2a82abb`](https://github.com/stdlib-js/stdlib/commit/2a82abbf6aa34b8e545993b750d3eccf9b4cdd15) - add float16 dtype support to `array/linspace` [(#14603)](https://github.com/stdlib-js/stdlib/pull/14603)
+
+</section>
+
+<!-- /.features -->
 
 <section class="commits">
 
@@ -12,6 +22,7 @@
 
 <details>
 
+-   [`2a82abb`](https://github.com/stdlib-js/stdlib/commit/2a82abbf6aa34b8e545993b750d3eccf9b4cdd15) - **feat:** add float16 dtype support to `array/linspace` [(#14603)](https://github.com/stdlib-js/stdlib/pull/14603) _(by Samarth Kolarkar)_
 -   [`56bc531`](https://github.com/stdlib-js/stdlib/commit/56bc5310298aec8f6eca5ca07ccff333c4792a40) - **bench:** refactor to use string interpolation in `@stdlib/array` [(#11412)](https:-/github.com/stdlib-js/stdlib/pull/11412) _(by Karan Anand, Athan Reines)_
 
 </details>
@@ -24,10 +35,11 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Karan Anand
+-   Samarth Kolarkar
 
 </section>
 
