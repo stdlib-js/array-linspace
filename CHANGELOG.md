@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-02)
+## Unreleased (2026-11-10)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`38b2adb`](https://github.com/stdlib-js/stdlib/commit/38b2adb22b72f7bbf75b2a4ed423ae9da986965a) - **docs:** improve doctests for complex number instances in `array/linspace` [(#16569)](https://github.com/stdlib-js/stdlib/pull/16569) _(by Mustansir-06)_
 -   [`2a82abb`](https://github.com/stdlib-js/stdlib/commit/2a82abbf6aa34b8e545993b750d3eccf9b4cdd15) - **feat:** add float16 dtype support to `array/linspace` [(#14603)](https://github.com/stdlib-js/stdlib/pull/14603) _(by Samarth Kolarkar)_
 -   [`56bc531`](https://github.com/stdlib-js/stdlib/commit/56bc5310298aec8f6eca5ca07ccff333c4792a40) - **bench:** refactor to use string interpolation in `@stdlib/array` [(#11412)](https:-/github.com/stdlib-js/stdlib/pull/11412) _(by Karan Anand, Athan Reines)_
 
@@ -35,10 +36,11 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Karan Anand
+-   Mustansir-06
 -   Samarth Kolarkar
 
 </section>
