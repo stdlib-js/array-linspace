@@ -35,38 +35,32 @@ limitations under the License.
 
 > Generate a linearly spaced array over a specified interval.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-linspace
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-linspace = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-linspace@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var linspace = require( 'path/to/vendor/umd/array-linspace/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-linspace@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.linspace;
-})();
-</script>
+var linspace = require( '@stdlib/array-linspace' );
 ```
 
 #### linspace( start, stop, length\[, options] )
@@ -140,8 +134,6 @@ When either `start` or `stop` is a complex number, the default output array data
 
 ```javascript
 var Complex128 = require( '@stdlib/complex-float64-ctor' );
-var real = require( '@stdlib/complex-float64-real' );
-var imag = require( '@stdlib/complex-float64-imag' );
 
 var opts = {
     'dtype': 'generic'
@@ -154,22 +146,10 @@ var arr = linspace( start, stop, 6, opts );
 // returns [ <Complex128>, <Complex128>, <Complex128>, <Complex128>, <Complex128>, <Complex128> ]
 
 var z = arr[ 0 ];
-// returns <Complex128>
-
-var re = real( z );
-// returns 0.0
-
-var im = imag( z );
-// returns 0.0
+// returns <Complex128>[ 0.0, 0.0 ]
 
 z = arr[ 1 ];
-// returns <Complex128>
-
-re = real( z );
-// returns 20.0
-
-im = imag( z );
-// returns 2.0
+// returns <Complex128>[ 20.0, 2.0 ]
 
 // ...
 ```
@@ -301,13 +281,8 @@ var arr = linspace.assign( 0.0, 100.0, out, opts );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-linspace@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var linspace = require( '@stdlib/array-linspace' );
 
 // Define function options:
 var opts = {
@@ -327,11 +302,6 @@ console.log( out );
 // Create an array with decremented values:
 out = linspace( 10, 0, 11, opts );
 console.log( out );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -425,19 +395,19 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-linspace/main/LICENSE
 
-[@stdlib/math/base/special/roundn]: https://github.com/stdlib-js/math-base-special-roundn/tree/umd
+[@stdlib/math/base/special/roundn]: https://github.com/stdlib-js/math-base-special-roundn
 
-[@stdlib/array/typed-float-dtypes]: https://github.com/stdlib-js/array-typed-float-dtypes/tree/umd
+[@stdlib/array/typed-float-dtypes]: https://github.com/stdlib-js/array-typed-float-dtypes
 
-[@stdlib/array/typed-complex-dtypes]: https://github.com/stdlib-js/array-typed-complex-dtypes/tree/umd
+[@stdlib/array/typed-complex-dtypes]: https://github.com/stdlib-js/array-typed-complex-dtypes
 
-[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32/tree/umd
+[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32
 
-[@stdlib/array/incrspace]: https://github.com/stdlib-js/array-incrspace/tree/umd
+[@stdlib/array/incrspace]: https://github.com/stdlib-js/array-incrspace
 
 <!-- <related-links> -->
 
-[@stdlib/array/logspace]: https://github.com/stdlib-js/array-logspace/tree/umd
+[@stdlib/array/logspace]: https://github.com/stdlib-js/array-logspace
 
 <!-- </related-links> -->
 
